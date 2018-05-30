@@ -8,7 +8,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js')
-      .then(funtion (registration) {
+      .then(function (registration) {
         console.log('ServiceWorker registration success', registration)
       })
       .catch(function (err) {
