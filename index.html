@@ -5,6 +5,16 @@
   <title>任羽飞</title>
 </head>
 <body>
-  
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+      .then(funtion (registration) {
+        console.log('ServiceWorker registration success', registration)
+      })
+      .catch(function (err) {
+        console.error('ServiceWorker registration failed:', err)
+      })
+    }
+  </script>
 </body>
 </html>
