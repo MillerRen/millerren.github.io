@@ -1,9 +1,11 @@
 self.addEventListener('install', function (e) {
   console.log('install')
-  e.waitUntil(caches.open('installation')
+  e.waitUntil(caches.open('v2')
     .then(function (cache) {
       return cache.addAll([
-        './'
+        './',
+        './style.css',
+        './fly.jpg'
       ])
     }))
 })

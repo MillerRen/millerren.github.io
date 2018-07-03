@@ -1,0 +1,12 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: #000;
+  background-image: url(./fly.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
