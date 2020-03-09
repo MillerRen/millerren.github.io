@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev .",
-    "build": "vuepress build ."
+    "build": "vuepress build .",
+    "deploy": "gh-pages -d dist"
   },
   "author": "MillerRen",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "vuepress": "^1.3.1"
   }
 }
