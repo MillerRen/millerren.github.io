@@ -1,0 +1,16 @@
+{
+  "name": "renyufei.com",
+  "version": "1.0.0",
+  "description": "personal blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "author": "MillerRen",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.3.1"
+  }
+}
