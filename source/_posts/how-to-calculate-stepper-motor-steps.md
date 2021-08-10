@@ -14,7 +14,7 @@ tags:
   公式为：`每毫米步数=驱动细分数*360°/步距角/齿数/齿距*减速比`
   
   {% raw %}
-  <div id="steps-calculator"  style="border: 1px dashed #888;border-radius:4px; padding: 8px">
+  <div id="steps-calculator"  style="border: 1px dashed #888;border-radius:4px; padding: 8px;background:#eee;">
     <form>
     
       <label  id="steps_per_mm"> 100 </label>
