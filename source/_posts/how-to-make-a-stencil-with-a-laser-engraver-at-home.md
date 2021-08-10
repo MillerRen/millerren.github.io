@@ -26,3 +26,7 @@ tags:
   设置好软件和硬件，就可以开始雕刻了，雕刻完成后，把刀路上的碎屑和毛刺清除干净，一张“激光钢网”就诞生了。这样可以快速的制作PCB激光网，方便在家制作，但是缺点是不适合太小的（0603及以上的）电子元件。
 
   嘉立创导出的SVG里面包含额外的外框，并且带了单位，不适合直接导入到lasergrbl，需要在Inkscape里面进行修改。导出PDF而不是SVG是因为SVG导入导出总是出现莫名奇妙的问题。
+
+  <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=377178402&bvid=BV1co4y1D7W6&cid=386199408&page=1"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe>
+</div>
