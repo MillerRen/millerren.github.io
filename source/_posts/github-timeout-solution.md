@@ -15,4 +15,38 @@ tags:
 
 2. 更新hosts文件添加一行,如`140.82.121.4 github.com` 把这个IP换成你从刚才查询的那个IP，保存。
 
+
 现在访问试试，是不是非常快乐呢？
+
+hosts绑定还支持多个IP，我写了一个js工具，用于将上面链接的数据抽取转化为hosts列表：
+
+```
+/*
+ * 把这段代码放入上面链接的页面的console中执行
+ */
+// 抽取元素，页面集成了jquery
+var ips = $('#speedlist .row')
+.map(function(index, row){
+    var ip = $(row).find('[name=ip]').text();
+    var address = $(row).find('[name=address]').text();
+    var responsetime = $(row).find('[name=responsetime]').text();
+    return {
+        ip:ip,
+        address:address,
+        responsetime:responsetime
+    }
+
+})
+
+ips = $.makeArray(ips) // 转为数组
+ips.shift() // 去掉头部
+ips = ips.filter(function(el){ // 过滤超时
+    return el.responsetime!='超时' && el.ip != '超时(重试)'
+  })
+  .sort(function (a, b) {return a.responsetime<b.responsetime}) // 排序
+  .map(function(el){return el.ip}) // 只要IP
+  .unique() // 唯一
+  .map(function(el){return el+' github.com'}) // 生成hosts项
+
+console.log(ips.join('\n')) // 输出
+```
