@@ -5,9 +5,11 @@ tags:
  - 贝塞尔曲线
 categories:
  - 学习
+mathjax: true
 ---
 
 一阶贝塞尔曲线是一条直线，它的方程式如下：
+
 $$B_1(t)=P_0+(P_1-P_0)t$$
 $$B_1(t)=(1-t)P_0+tP_1, t\in[0,1] $$
 
@@ -27,7 +29,7 @@ $$y(t)=(1-t)y_0+y_1$$
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"  style="width:100%;height:200px" viewBox="0 0 1000 200">
     <g stroke="#f00" fill="#ff0" stroke-width="1">
     <line x1="0" y1="0" x2="100" y2="200" id="line" />
-    <circle r="2" cx="0" cy="0" id="point">
+    <circle r="2" cx="0" cy="0" id="point" />
     </g>
 </svg>
 <input type="range" value="0" step="0.01" min="0" max="1" id="input" style="width:100%" />
