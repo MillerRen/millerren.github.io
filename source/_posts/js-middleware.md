@@ -54,14 +54,17 @@ const app = {
 app.use(function (ctx, next) {
     console.log(ctx.cout)
     ctx.cout = 1
+    next()
 })
 app.use(function (ctx, next) {
     console.log(ctx.cout)
     ctx.cout = 2
+    next()
 })
 app.use(function (ctx, next) {
     console.log(ctx.cout)
     ctx.cout = 3
+    next()
 })
 var ctx = {
     count:0
